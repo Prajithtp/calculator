@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./asset/library/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"></script>
+    
+</head>
+<body>
+    <!-- <table class="table-dark table-hover" >
+        <tr > 
+            <td colspan="3"><input type="text" id="result" class=" table-light"></td> 
+            <td colspan=""><input type="button" value="ac" onclick="aclr()" /> </td>
+            <td><input type="button" value="c"
+                onclick="backspace()"></td> 
+            
+        </tr> 
+        <tr> 
+            <td><input type="button" value="1" onclick="dis('1')"> </td> 
+            <td><input type="button" value="2" onclick="dis('2')"> </td> 
+            <td><input type="button" value="3" onclick="dis('3')"> </td> 
+            <td><input type="button" value="+" onclick="dis('+')"> </td>
+            
+        </tr> 
+
+        <tr> 
+            <td><input type="button" value="4" onclick="dis('4')"> </td> 
+            <td><input type="button" value="5" onclick="dis('5')"> </td> 
+            <td><input type="button" value="6" onclick="dis('6')"> </td> 
+            <td><input type="button" value="-" onclick="dis('-')"> </td> 
+        </tr>
+
+        <tr> 
+            <td><input type="button" value="7" onclick="dis('7')"> </td> 
+            <td><input type="button" value="8" onclick="dis('8')"> </td> 
+            <td><input type="button" value="9" onclick="dis('9')"> </td> 
+            <td><input type="button" value="*" onclick="dis('*')"> </td> 
+        </tr>
+
+        <tr> 
+            <td><input type="button" value="0" onclick="zero('0')"> </td> 
+            <td><input type="button" value="." onclick="dot('.')"> </td> 
+            
+            <td><input type="button" value="=" onclick="calculate()"> </td> 
+  
+            <td><input type="button" value="/" onclick="dis('/')"> </td> 
+        </tr>  -->
+
+
+
+
+        <div id="calculator">
+            <input id="display" readonly disabled>
+            <div id="keys">
+                <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('-')"class="operator-btn">-</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('*')"class="operator-btn">*</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('/')"class="operator-btn">/</button>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button id="dezimal" onclick="appendToDisplay('.')">.</button>
+                <button onclick="calculate()">=</button>
+                <button onclick="cleardisplay()">AC</button>
+                <button onclick="backspace()">C</button>
+            </div>
+        </div>
+
+
+
+    </table>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="/main.js"></script>
+</body>
+</html>
